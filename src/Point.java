@@ -57,7 +57,7 @@ public class Point{
         int y1 = getY();
         int x2 = point.getX();
         int y2 = point.getY();
-        double distance = Math.sqrt((Math.pow(x2, 2) - Math.pow(x1 , 2) + Math.pow(y2, 2) - Math.pow(y1,2)));
+        double distance = Double.valueOf(Math.sqrt((Math.pow(x2, 2) - Math.pow(x1 , 2)) + (Math.pow(y2, 2) - Math.pow(y1,2))));
         return distance;
     }
 } 
